@@ -1,34 +1,33 @@
 <?php
-// String
-$name = "Ali";
 
-// Integer
-$age = 20;
+/*
 
-// Float (double)
-$price = 19.99;
+Challenge 1: Manipulating Variables and Types in PHP
 
-// Boolean
-$isStudent = true;
+Project Description:
+In this challenge, you will work with variables and different data types in PHP, including integers, strings, arrays, and booleans.
 
-// Array
-$colors = ["red", "green", "blue"];
+To Do:
 
-// Null
-$nothing = null;
+Create a variable $age and assign it an integer value (e.g., 25).
 
-// Output values
-echo "Name: " . $name . "\n";
-echo "Age: " . $age . "\n";
-echo "Price: " . $price . "\n";
-echo "Is student: " . ($isStudent ? "Yes" : "No") . "\n";
-echo "First color: " . $colors[0] . "\n";
+Create a variable $name and assign your name as a string.
 
-// Check types
-var_dump($name);
-var_dump($age);
-var_dump($price);
-var_dump($isStudent);
-var_dump($colors);
-var_dump($nothing);
+Create an array $fruits containing a list of fruits (e.g., apple, banana, orange).
+
+Create a boolean variable $isAdult that checks if the age is 18 or older.
+
+Display the values of all these variables using echo.
+*/
+
+
+$age = 15;
+$name = 'Laravel';
+$fruits = ['apple', 'banana', 'orange'];
+$isAdult = $age >= 18;  
+
+echo $age . PHP_EOL;
+echo $name . PHP_EOL;
+echo $fruits[1] . PHP_EOL;  // Displays 'banana', which is the second element (index 1)
+echo $isAdult ? 'age = 18 or older' : 'younger than 18'; 
 ?>
